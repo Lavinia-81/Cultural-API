@@ -2,42 +2,36 @@
 API profesional, elegant și modern pentru accesarea poeziilor și prozei din literatura română clasică.  
 Conceput pentru dezvoltatori, cercetători, profesori și pasionați de cultură.
 
-[![Status](https://img.shields.io/badge/status-live-brightgreen)]()
-[![HTTPS](https://img.shields.io/badge/security-HTTPS-blue)]()
-[![API Version](https://img.shields.io/badge/version-1.0.0-black)]()
-[![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
-
 ---
 
 ## 🔗 Acces rapid
 
-### 🌐 🌐 URL principal (HTTPS)
+### 🌐 URL principal (HTTPS)
 https://api-poezie-si-proza.onrender.com
 
+---
+
+## 📚 Descriere
+
+Acest proiect oferă un API modern, construit cu **Node.js + Express**, care pune la dispoziție operele marilor autori clasici români: poezii, proză, bibliografie și imagini.
+
+Pe lângă accesul la conținut literar, API‑ul include acum o platformă completă de abonamente, cu:
+- conturi de utilizator
+- chei API
+- planuri Free / Basic / Premium
+- Stripe Checkout
+- Stripe Webhooks
+- rate‑limiting în funcție de plan
+- Customer Portal
+- pagini bilingve (EN/RO)
+- securitate avansată
+Conținutul literar rămâne file‑based, ușor de extins și fără baze de date.
+
+---
 
 ## 🔑 Autentificare
 
 API-ul folosește autentificare prin **API Key**.
-Include cheia în header:
-x-api-key: YOUR_API_KEY
-
-
----
-
-## 📚 Endpointuri
-
-### Poezii
-- `GET /api/poezii`
-- `GET /api/poezii/:id`
-
-### Proză
-- `GET /api/proza`
-- `GET /api/proza/:id`
-
----
-
-## 🧪 Exemple
-
 ### cURL
 ```bash
 curl https://domeniul-tau.ro/api/poezii \
@@ -53,13 +47,33 @@ fetch("https://domeniul-tau.ro/api/poezii", {
 ```
 ---
 
-## Planuri
-Free · Basic · Premium
+### 📖 Acces la literatură
 
----
-### Folosirea API key‑ului
-```GET /poeti?apiKey=CHEIA_TA_API```
+- Poezii clasice româneșt
+- Proză și povestiri
+- Bibliografie text
+- Imagini ale autorilor
+- Căutare după autor și titlu
+- Suport complet pentru diacritice
 
+### 📚 Endpointuri principale
+
+### Poezii
+- `GET /autor/{autor}/poezii`
+- `GET /autor/{autor}/:id`
+- `GET /autor/{autor}/:id/text`
+
+### Proză
+- `GET autor/{autor}/proza`
+- `GET autor/{autor}/proza/:id`
+- `GET autor/{autor}/proza/:id/text`
+
+### Bibliografie
+- `GET autor/{autor}/bibliografie/text`
+  
+### Poza autor
+- `GET autor/{autor}/poza`
+  
 ---
 
 ## 🛡 Securitate
@@ -71,23 +85,19 @@ Monitorizare trafic
 
 ---
 
-## Despre proiect
-Acest API a fost creat pentru a moderniza accesul la literatura românească clasică și pentru a o integra în aplicații educaționale, culturale și digitale moderne.
----
-
 ## 📄 Licență
 Acest proiect este distribuit sub licența MIT.
 
 ---
 
-## ❤️ Autor
+### ❤️ Autor
 
 Acest API a fost construit cu grijă pentru a oferi acces modern, sigur și elegant la literatura românească clasică.
 Proiect dezvoltat de Maria Lavinia.
 
 ---
 
-## Notă:  
+### Notă:  
 Notă privind performanța API‑ului  
 Acest serviciu rulează în prezent pe un plan gratuit Render.
 Prima cerere după o perioadă de inactivitate poate avea o întârziere de aproximativ 60 de secunde, deoarece instanța este repornită automat.
