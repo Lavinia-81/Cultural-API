@@ -1,4 +1,4 @@
-# 📘 Poezii & Proză API  
+# 📘 Romanian Classical Literature API 
 API profesional, elegant și modern pentru accesarea poeziilor și prozei din literatura română clasică.  
 Conceput pentru dezvoltatori, cercetători, profesori și pasionați de cultură.
 
