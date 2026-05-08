@@ -7,7 +7,7 @@ Conceput pentru dezvoltatori, cercetători, profesori și pasionați de cultură
 ## 🔗 Acces rapid
 
 ### 🌐 URL principal (HTTPS)
-https://api-poezie-si-proza.onrender.com
+https://culturalapi.onrender.com/
 
 ---
 
